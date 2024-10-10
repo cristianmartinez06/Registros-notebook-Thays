@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros-thays</title>
+    <link rel="stylesheet" href="./style-home.css">
+    <link rel="icon" href="./recursos/thays-chico.png">
+</head>
+<body>
+    <nav>
+        <img src="./recursos/thays-grande.png" alt="thays" width="100px">
+        <h1>¡Registros Sala Info!</h1>
+    </nav>
+    <!-- Formulario para registrar computadoras -->
+    <div class="register-container">
+        <h2>Registrar Computadora/s</h2>
+        <form id="computerForm">
+            <label for="responsable">Persona responsable:</label>
+            <input type="text" id="responsable" placeholder="Ej: Facundo Dartwig" required>
+
+            <label for="curso">Curso del responsable:</label>
+            <input type="text" id="curso" placeholder="Ej: 4°4°" >
+
+            <!-- Múltiples campos de modelo -->
+            <label for="modelo">N° De Notebook:</label>
+            <div id="modelosContainer">
+                <input type="text" class="modelo" placeholder="Ej: 15" required>
+            </div>
+            <button type="button" id="addModelBtn">+</button>
+
+
+            <label for="prestador">Prestador:</label>
+            <input type="text" id="prestador" placeholder="Ej: Cristian" required>
+  <!-- Campo para Fecha y Hora -->
+  <label for="fechaHora">Fecha y Hora de Registro:</label>
+  <input type="datetime-local" id="fechaHora" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    
+    <!-- Tabla para mostrar los registros de computadoras -->
+    <div class="table-container">
+        <h2>Listado de Computadoras Registradas</h2>
+        <table id="computerTable">
+            <thead>
+                <tr>
+                    <th>Responsable</th>
+                    <th>Curso</th>
+                    <th>N° Notebook</th>
+                    <th>Prestador</th>
+                    <th>Fecha/Hora</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los registros de computadoras aparecerán aquí -->
+            </tbody>
+        </table>
+        <!-- Botón para eliminar todos los registros -->
+        <button id="clearAllBtn">Eliminar Todos los Registros</button>
+
+        <center>
+            <button id="logoutBtn">Cerrar sesión</button>
+        </center>
+    </div>
+
+
+
+    <marquee behavior="" direction="right">
+        <h3>Crado por Facundo Dartwig</h3>
+    </marquee>
+    <script src="./script-home.js"></script>
+</body>
+</html>
