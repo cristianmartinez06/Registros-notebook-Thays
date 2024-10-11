@@ -20,7 +20,29 @@
             <input type="text" id="responsable" placeholder="Ej: Facundo Dartwig" required>
 
             <label for="curso">Curso del responsable:</label>
-            <input type="text" id="curso" placeholder="Ej: 4°4°" >
+            <select id="curso" name="Curso" >
+                <option value="1°1°">1°1°</option>
+                <option value="1°2°">1°2°</option>
+                <option value="1°3°">1°3°</option>
+                <option value="1°4°">1°4°</option>
+                <option value="2°1°">2°1°</option>
+                <option value="2°2°">2°2°</option>
+                <option value="2°3°">2°3°</option>
+                <option value="2°4°">2°4°</option>
+                <option value="3°1°">3°1°</option>
+                <option value="3°2°">3°2°</option>
+                <option value="3°3°">3°3°</option>
+                <option value="3°4°">3°4°</option>
+                <option value="3°5°">3°5°</option>
+                <option value="4°1°">4°1°</option>
+                <option value="4°2°">4°2°</option>
+                <option value="4°3°">4°3°</option>
+                <option value="4°4°">4°4°</option>
+                <option value="5°1°">5°1°</option>
+                <option value="5°2°">5°2°</option>
+                <option value="5°3°">5°3°</option>
+                <option value="5°4°">5°4°</option>
+            </select>
 
             <!-- Múltiples campos de modelo -->
             <label for="modelo">N° De Notebook:</label>
@@ -31,7 +53,13 @@
 
 
             <label for="prestador">Prestador:</label>
-            <input type="text" id="prestador" placeholder="Ej: Cristian" required>
+            <select id="prestador" name="Prestadores" required>
+                <option value="Cristian">Cristian</option>
+                <option value="Cristina">Cristina</option>
+                <option value="Parrish">Parrish</option>
+                <option value="Guillermo">Guillermo</option>
+                <option value="Montaldi">Montaldi</option>
+            </select>
   <!-- Campo para Fecha y Hora -->
   <label for="fechaHora">Fecha y Hora de Registro:</label>
   <input type="datetime-local" id="fechaHora" required>
